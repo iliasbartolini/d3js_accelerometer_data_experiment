@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>D3.js example</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./bower_components/jquery/dist/jquery.js"></script>-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="./bower_components/d3/dist/d3.js"></script> -->
+    <!-- <script src="https://raw.githubusercontent.com/Caged/d3-tip/v0.7.1/index.js"></script> -->
+    <!-- <script src="./bower_components/d3-tip/index.js"></script> -->
+    <script src="./lib/d3-tip/index.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <body>
+    <h1>FabAcademy: accelerometer data with D3.js</h1>
+
+    <div>
+      <h3>Data samples</h3>
+      Url: <input class="load_data_url" type="text" value="data/acceleration_2.json"></input>
+      <button type="button" class="reload_data">Reload data</button>
+    </div>
+    <div>
+      <h3>Charts contols</h3>
+      Start time: <input class="start_input" type="number" min="0" max="10" step="1" value="0"></input> sec.
+        <input class="start_range" type="range" min="0" max="10" step="1" value="0"></input><br>
+      Time window: <input class="take_input" type="number" min="1" max="10" step="1" value="0"></input> sec.
+        <input class="take_range" type="range" min="1" max="10" step="1" value="0"></input><br>
+      <button type="button" class="update" disabled="disabled">Update charts</button>
+      <button type="button" class="play" disabled="disabled">Play &#x23f5;</button>
+      <button type="button" class="pause" disabled="disabled">Pause &#x23f8;</button>
+    </div>
+
+    <svg class="chart_histogram"></svg>
+    <svg class="chart_xy"></svg>
+    <svg class="chart_xz"></svg>
+    <svg class="chart_yz"></svg>
+
+  </body>
+</html>

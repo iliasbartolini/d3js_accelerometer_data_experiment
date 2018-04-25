@@ -1,0 +1,23 @@
+{
+  "name": "d3js_accelerometer",
+  "version": "1.0.0",
+  "description": "Test project to try D3.js functionalities in FabAcademy",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "./node_modules/browser-sync/dist/bin.js --server -f ./*.html -f ./*.js -f ./*.css"
+  },
+  "author": "Ilias Bartolini",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "browser-sync": "^2.23.7",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-watch": "^3.1.4"
+  }
+}
